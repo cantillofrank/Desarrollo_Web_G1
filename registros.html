@@ -1,0 +1,29 @@
+<form id="regForm" class="form-grid" novalidate>
+    <div class="full-width">
+        <label for="fullname">Nombre Completo</label>
+        <input type="text" id="fullname" required />
+        <span class="error-message" id="nameErr"></span>
+    </div>
+    <div>
+        <label for="regEmail">Correo Electrónico</label>
+        <input type="email" id="regEmail" required />
+        <span class="error-message" id="regEmailErr"></span>
+    </div>
+    <div>
+        <label for="gender">Género</label>
+        <select id="gender">
+            <option value="">Seleccione...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+    </div>
+    <div class="full-width">
+        <label><input type="checkbox" id="terms" /> Acepto Términos y Condiciones</label>
+        <span class="error-message" id="termsErr"></span>
+    </div>
+    <button type="submit" class="full-width btn-success">Registrar Cuenta</button>
+</form>
+<div id="regSummary" class="summary-card" style="display: none">
+    <h3>¡Cuenta Creada Con Éxito!</h3>
+    <p id="summaryText"></p>
+</div>
